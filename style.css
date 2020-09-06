@@ -1,0 +1,23 @@
+.heading {
+    background-color: darkolivegreen;
+}
+
+.color {
+    color: floralwhite;
+    font-family: cursive;
+}
+
+.weight {
+    font-weight: 500;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    float: left;
+}
+
+.start {
+    background-color: floralwhite;
+    color: forestgreen;
+}
