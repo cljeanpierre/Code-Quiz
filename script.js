@@ -1,5 +1,20 @@
-// Create a Start Quiz button with a click option
-// Create a timer that starts at 3 minutes and begins counting down when I click the Start Quiz button
+
+// Create a timer that starts at 5 minutes and begins counting down when I click the Start Quiz button
+
+var timer = document.querySelector(".time");
+var timeLeft = 300;
+
+function setTimer() {
+    var time = timeInterval(function(){
+        timeLeft--;
+        if (timeLeft === 0) {
+        return "Time's UP!"
+        }
+    })
+}
+
+setTimer();
+
 // Make the timer deduct 15 seconds when a question is answered incorrectly
 // Prompt User with first question
 // When the User answers the first question, open a new page and prompt second question
