@@ -76,7 +76,7 @@ var quizQuestions = [
 var eachQuestion = 0;
 
 var displayQuestion = document.getElementById("go").addEventListener("click", function() {
-    var [question, choices] = [quizQuestions[eachQuestion].choices];
+    var [question, choices] = [quizQuestions[eachQuestion].question, quizQuestions[eachQuestion].choices];
 });
 
 // End game when all five questions have been answered or when the timer reaches zero
