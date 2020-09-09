@@ -2,14 +2,6 @@
 // Create a timer that starts at 5 minutes and begins counting down when I click the Start Quiz button
 
 var timeLeft = 300;
-// var startQuiz = document.getElementById("go").addEventListener("click", function() {
-//     console.log(timeLeft);  
-//     document.getElementById("time").innerHTML = timeLeft; 
-//     timeLeft--; 
-//     if (timeLeft === 0  || timeLeft < 0) {
-//         document.getElementById("time").innerHTML = "Time's Up!"
-//     }
-//       }, 1000); 
 
 var startQuiz = document.getElementById("go").addEventListener("click", () => setInterval(function(){
     console.log(timeLeft);  
@@ -18,20 +10,7 @@ var startQuiz = document.getElementById("go").addEventListener("click", () => se
     if (timeLeft === 0  || timeLeft < 0) {
         document.getElementById("time").innerHTML = "Time's Up!"
     } 
-        }, 1000)); 
-
-// setInterval(function(timer) {
-// console.log(timeLeft);  
-// document.getElementById("time").innerHTML = timeLeft; 
-// timeLeft--; 
-// if (timeLeft === 0  || timeLeft < 0) {
-//     document.getElementById("time").innerHTML = "Time's Up!"
-// }
-//   }, 1000);
-
-
-
-// Make the timer deduct 15 seconds when a question is answered incorrectly
+        }, 1000));
 
 
 // Write Questions
@@ -94,6 +73,11 @@ var quizQuestions = [
 
 ]
 // Prompt User with first question
+var eachQuestion = 0;
+
+var displayQuestion = document.getElementById("go").addEventListener("click", function() {
+    var [question, choices] = [quizQuestions[eachQuestion].choices];
+});
 
 // End game when all five questions have been answered or when the timer reaches zero
 // Allow User to save their initials and score
