@@ -11,14 +11,14 @@ var timeLeft = 300;
 //     }
 //       }, 1000); 
 
-var startQuiz = document.getElementById("go").addEventListener("click", setInterval(function(timer) {
+var startQuiz = document.getElementById("go").addEventListener("click", () => setInterval(function(){
     console.log(timeLeft);  
     document.getElementById("time").innerHTML = timeLeft; 
     timeLeft--; 
     if (timeLeft === 0  || timeLeft < 0) {
         document.getElementById("time").innerHTML = "Time's Up!"
-    }
-      }, 1000));
+    } 
+        }, 1000)); 
 
 // setInterval(function(timer) {
 // console.log(timeLeft);  
@@ -97,5 +97,3 @@ var quizQuestions = [
 
 // End game when all five questions have been answered or when the timer reaches zero
 // Allow User to save their initials and score
-
-console.log ("This page is connected.");
