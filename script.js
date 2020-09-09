@@ -1,17 +1,39 @@
 
 // Create a timer that starts at 5 minutes and begins counting down when I click the Start Quiz button
 
-var timeLeft = 5;
+var timeLeft = 300;
+// var startQuiz = document.getElementById("go").addEventListener("click", function() {
+//     console.log(timeLeft);  
+//     document.getElementById("time").innerHTML = timeLeft; 
+//     timeLeft--; 
+//     if (timeLeft === 0  || timeLeft < 0) {
+//         document.getElementById("time").innerHTML = "Time's Up!"
+//     }
+//       }, 1000); 
 
-var x = setInterval(function() {
-console.log(timeLeft);  
-document.getElementById("time").innerHTML = timeLeft; 
-timeLeft--; 
-if (timeLeft === 0  || timeLeft < 0) {
-    document.getElementById("time").innerHTML = "Time's Up!"
-}
-  }, 1000);
+var startQuiz = document.getElementById("go").addEventListener("click", setInterval(function(timer) {
+    console.log(timeLeft);  
+    document.getElementById("time").innerHTML = timeLeft; 
+    timeLeft--; 
+    if (timeLeft === 0  || timeLeft < 0) {
+        document.getElementById("time").innerHTML = "Time's Up!"
+    }
+      }, 1000));
+
+// setInterval(function(timer) {
+// console.log(timeLeft);  
+// document.getElementById("time").innerHTML = timeLeft; 
+// timeLeft--; 
+// if (timeLeft === 0  || timeLeft < 0) {
+//     document.getElementById("time").innerHTML = "Time's Up!"
+// }
+//   }, 1000);
+
+
+
 // Make the timer deduct 15 seconds when a question is answered incorrectly
+
+
 // Write Questions
 var quizQuestions = [
     {
