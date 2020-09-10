@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-<link rel = "stylesheet" href="style.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Civics and Government Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Civics and Government Quiz</title>
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand text-success" href="#">View Highscores</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">  
-          </ul>
-          <span class="navbar-text text-success">
-            <div id = time>
-              Timer: 300
-            </div>
-          </span>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand text-success" href="#">View Highscores</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <span class="navbar-text text-success">
+        <div id=time>
+          Timer: 300
         </div>
-      </nav>
+      </span>
+    </div>
+  </nav>
 
-      <div class="jumbotron jumbotron-fluid heading">
-        <div class="container">
-            <div class="row">
-                <div class="column">
-                        <h1 class="display-3 justify-content-center m-3 color">Civics and Government Quiz!<h1>
-                        <p class="lead weight"><strong>DIRECTIONS:</strong> You have 5 minutes to answer the following 10 questions about civics and government in the United States.  If you answer a question incorrectly, the timer will deduct 30 seconds.</p>
+  <div class="jumbotron jumbotron-fluid heading">
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div id="prompt">
+            <h1 class="display-3 justify-content-center m-3 color">Civics and Government Quiz!<h1>
+                <p class="lead weight"><strong>DIRECTIONS:</strong> You have 5 minutes to answer the following 10
+                  questions about civics and government in the United States. If you answer a question incorrectly, the
+                  timer will deduct 30 seconds.</p>
 
-                    <div class="row mx-md-n5 justify-content-center">
-                        <!-- <img src="https://media.giphy.com/media/3o8dFzIXb0qaE3pYWs/giphy.gif" class="img-fluid" alt="Responsive image"> -->
-
-                        <img src="https://media.giphy.com/media/xT8qBit7YomT80d0M8/giphy.gif" class="img-fluid" alt="Responsive image">
-                    </div>
+                <div class="row mx-md-n5 justify-content-center">
+                  <img src="https://media.giphy.com/media/xT8qBit7YomT80d0M8/giphy.gif" class="img-fluid"
+                    alt="Responsive image">
+                </div>
 
                 <div class="column text-justify-left m-3">
-                <a href="#" class="btn btn-lg active start weight" role="button" aria-pressed="true" id="go">Start Quiz</a>
+                  <a href="#" class="btn btn-lg active start weight" role="button" aria-pressed="true" id="go">Start
+                    Quiz</a>
                 </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div id="question" class="styling" type="button" class="btn btn-primary btn-lg btn-block">
+          </div>
         </div>
       </div>
-
-    
-
     </div>
+  </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+
+
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
