@@ -3,14 +3,14 @@
 
 var timeLeft = 300;
 
-var startQuiz = document.getElementById("go").addEventListener("click", () => setInterval(function(){
-    console.log(timeLeft);  
-    document.getElementById("time").innerHTML = timeLeft; 
-    timeLeft--; 
-    if (timeLeft === 0  || timeLeft < 0) {
+var startQuiz = document.getElementById("go").addEventListener("click", () => setInterval(function () {
+    console.log(timeLeft);
+    document.getElementById("time").innerHTML = timeLeft;
+    timeLeft--;
+    if (timeLeft === 0 || timeLeft < 0) {
         document.getElementById("time").innerHTML = "Time's Up!"
-    } 
-        }, 1000));
+    }
+}, 1000));
 
 
 // Write Questions
@@ -23,11 +23,11 @@ var quizQuestions = [
     {
         question: "Which of the following systems of government does the United States operate under?",
         choices: ["representative democracy", "direct democracy", "aristocracy", "monarchy"],
-        answer: "representative democracy" 
+        answer: "representative democracy"
     },
     {
         question: "Which is NOT a part of the United States Constitution?",
-        choices: ["pramble", "amendments", "political parties", "articles"],
+        choices: ["preamble", "amendments", "political parties", "articles"],
         answer: "political parties"
     },
     {
@@ -75,8 +75,24 @@ var quizQuestions = [
 // Prompt User with first question
 var eachQuestion = 0;
 
-var displayQuestion = document.getElementById("go").addEventListener("click", function() {
-    var [question, choices] = [quizQuestions[eachQuestion].question, quizQuestions[eachQuestion].choices];
+var displayQuestion = document.getElementById("go").addEventListener("click", function () {
+    //var [question, choices] = [quizQuestions[eachQuestion].question, quizQuestions[eachQuestion].choices];
+    var prompt = document.getElementById("prompt")
+    prompt.style.display = "none";
+    
+    var questionElement = document.getElementById("question")
+    questionElement.prepend (quizQuestions[eachQuestion].question);
+    
+for (var i=0; i < quizQuestions[eachQuestion].choices.length; i++) {
+    document.createElement = ""
+}
+
+    var choiceA = document.getElementById("choiceA");
+    choiceA.addEventListener("click", function () {
+
+    })
+    //     //when clicked, do something to upate score if correct
+
 });
 
 // End game when all five questions have been answered or when the timer reaches zero
