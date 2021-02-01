@@ -8,8 +8,7 @@
   <meta name="Description" content="Enter your description here" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Civics and Government Quiz</title>
 </head>
 
@@ -25,7 +24,7 @@
       <ul class="navbar-nav mr-auto">
       </ul>
       <span class="navbar-text text-success">
-        <div id=time>
+        <div class="timer">
           Timer: 300
         </div>
       </span>
@@ -39,8 +38,7 @@
           <div id="prompt">
             <h1 class="display-3 justify-content-center m-3 color">Civics and Government Quiz!<h1>
                 <p class="lead weight"><strong>DIRECTIONS:</strong> You have 5 minutes to answer the following 10
-                  questions about civics and government in the United States. If you answer a question incorrectly, the
-                  timer will deduct 30 seconds.</p>
+                  questions about civics and government in the United States.</p>
 
                 <div class="row mx-md-n5 justify-content-center">
                   <img src="https://media.giphy.com/media/xT8qBit7YomT80d0M8/giphy.gif" class="img-fluid"
@@ -48,12 +46,9 @@
                 </div>
 
                 <div class="column text-justify-left m-3">
-                  <a href="#" class="btn btn-lg active start weight" role="button" aria-pressed="true" id="go">Start
-                    Quiz</a>
+                  <button class="btn btn-lg active weight start">Start Quiz</button>
+                  <div class="question"></div>
                 </div>
-          </div>
-          <div id="question" class="styling" type="button" class="btn btn-primary btn-lg btn-block">
-          </div>
         </div>
       </div>
     </div>
@@ -67,7 +62,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
+  <script src="quiz.js"></script>
 </body>
 
 </html>
