@@ -172,7 +172,7 @@ resetGame = () => {
 
 
 startQuiz = () => {
-    $(".start").remove();
+    $("start").remove();
     displayQuestion();
 
 };
