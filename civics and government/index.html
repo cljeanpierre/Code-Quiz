@@ -14,6 +14,7 @@
 
 <body>
 
+  <!--top section-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand text-success" href="#">View Highscores</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -31,12 +32,13 @@
     </div>
   </nav>
 
+  <!--middle section-->
   <div class="jumbotron jumbotron-fluid heading">
     <div class="container">
       <div class="row">
         <div class="column">
           <div id="prompt">
-            <h1 class="display-3 justify-content-center m-3 color">Civics and Government Quiz!<h1>
+            <h1 class="display-3 m-3 color text-center">Civics and Government Quiz!<h1>
                 <p class="lead weight"><strong>DIRECTIONS:</strong> You have 5 minutes to answer the following 10
                   questions about civics and government in the United States.</p>
 
@@ -45,10 +47,305 @@
                     alt="Responsive image">
                 </div>
 
-                <div class="column text-justify-left m-3">
-                  <button class="btn btn-lg active weight start">Start Quiz</button>
-                  <div class="question"></div>
+                <div class="column m-3 text-center">
+                  <button class="btn btn-lg active weight" id="start">Click Here to Start Quiz</button>
                 </div>
+
+  <!--Quiz section-->    
+  <div class="quiz py-4 background">
+    <div class="container">
+      <h2 class="my-5 text-white text-center">How much do you know about your government?</h2>
+      <form class="quiz-form text-light">
+
+        <!--First Question-->
+        <div class="my-5">  
+          <p class="lead font-weight-normal">1. How many branches of government are there in the United States?</p>
+          <!--Option 1-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q1" value="A" checked>
+            <label class="form-check-label">1</label>
+          </div>
+          <!--Option 2-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q1" value="B">
+            <label class="form-check-label">2</label>
+          </div>
+          <!--Option 3-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q1" value="C">
+            <label class="form-check-label">3</label>
+          </div>
+          <!--Option 4-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q1" value="D">
+            <label class="form-check-label">4</label>
+          </div>
+        </div>
+
+        <!--Second Question-->
+        <div class="my-5">  
+          <p class="lead font-weight-normal">2. Which of the following systems of government does the United States operate under?</p>
+          <!--Option 1-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q2" value="A" checked>
+            <label class="form-check-label">representative democracy</label>
+          </div>
+          <!--Option 2-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q2" value="B">
+            <label class="form-check-label">direct democracy</label>
+          </div>
+          <!--Option 3-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q2" value="C">
+            <label class="form-check-label">aristocracy</label>
+          </div>
+          <!--Option 4-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q2" value="D">
+            <label class="form-check-label">monarchy</label>
+          </div>
+        </div>
+
+        <!--Third Question-->
+        <div class="my-5">  
+          <p class="lead font-weight-normal">3. Which is NOT a part of the United States Constitution?</p>
+          <!--Option 1-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q3" value="A" checked>
+            <label class="form-check-label">preamble</label>
+          </div>
+          <!--Option 2-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q3" value="B">
+            <label class="form-check-label">amendments</label>
+          </div>
+          <!--Option 3-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q3" value="C">
+            <label class="form-check-label">political parties</label>
+          </div>
+          <!--Option 4-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q3" value="D">
+            <label class="form-check-label">articles</label>
+          </div>
+        </div>
+
+        <!--Fourth Question-->
+        <div class="my-5">  
+          <p class="lead font-weight-normal">4. What is the legal process through which immigrants can become United States citizens?</p>
+          <!--Option 1-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q4" value="A" checked>
+            <label class="form-check-label">rationalization</label>
+          </div>
+          <!--Option 2-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q4" value="B">
+            <label class="form-check-label">consideration</label>
+          </div>
+          <!--Option 3-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q4" value="C">
+            <label class="form-check-label">naturalization</label>
+          </div>
+          <!--Option 4-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q4" value="D">
+            <label class="form-check-label">volunteerism</label>
+          </div>
+        </div>
+
+        <!--Fifth Question-->
+        <div class="my-5">  
+          <p class="lead font-weight-normal">5. Which government entity is part of the executive branch?</p>
+          <!--Option 1-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q5" value="A" checked>
+            <label class="form-check-label">Democratic National Committee</label>
+          </div>
+          <!--Option 2-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q5" value="B">
+            <label class="form-check-label">Congress's House Rules Committee</label>
+          </div>
+          <!--Option 3-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q5" value="C">
+            <label class="form-check-label">US Court of Appeals</label>
+          </div>
+          <!--Option 4-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q5" value="D">
+            <label class="form-check-label">The State Department</label>
+          </div>
+        </div>
+
+        <!--Sixth Question-->
+        <div class="my-5">  
+          <p class="lead font-weight-normal">6. How many amendments does the United States Constitution have?</p>
+          <!--Option 1-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q6" value="A" checked>
+            <label class="form-check-label">25</label>
+          </div>
+          <!--Option 2-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q6" value="B">
+            <label class="form-check-label">26</label>
+          </div>
+          <!--Option 3-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q6" value="C">
+            <label class="form-check-label">27</label>
+          </div>
+          <!--Option 4-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q6" value="D">
+            <label class="form-check-label">28</label>
+          </div>
+        </div>
+
+        <!--Seventh Question-->
+        <div class="my-5">  
+          <p class="lead font-weight-normal">7. Who is in charge of the executive branch?</p>
+          <!--Option 1-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q7" value="A" checked>
+            <label class="form-check-label">House of Representatives</label>
+          </div>
+          <!--Option 2-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q7" value="B">
+            <label class="form-check-label">Senate</label>
+          </div>
+          <!--Option 3-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q7" value="C">
+            <label class="form-check-label">President</label>
+          </div>
+          <!--Option 4-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q7" value="D">
+            <label class="form-check-label">Supreme Court</label>
+          </div>
+        </div>
+
+        <!--Eighth Question-->
+        <div class="my-5">  
+          <p class="lead font-weight-normal">8. How many years is one term for a United States senator?</p>
+          <!--Option 1-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q8" value="A" checked>
+            <label class="form-check-label">2</label>
+          </div>
+          <!--Option 2-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q8" value="B">
+            <label class="form-check-label">4</label>
+          </div>
+          <!--Option 3-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q8" value="C">
+            <label class="form-check-label">6</label>
+          </div>
+          <!--Option 4-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q8" value="D">
+            <label class="form-check-label">8</label>
+          </div>
+        </div>
+
+        <!--Ninth Question-->
+        <div class="my-5">  
+          <p class="lead font-weight-normal">9. What is the minimum requirement for a United States president?</p>
+          <!--Option 1-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q9" value="A" checked>
+            <label class="form-check-label">30</label>
+          </div>
+          <!--Option 2-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q9" value="B">
+            <label class="form-check-label">35</label>
+          </div>
+          <!--Option 3-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q9" value="C">
+            <label class="form-check-label">40</label>
+          </div>
+          <!--Option 4-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q9" value="D">
+            <label class="form-check-label">45</label>
+          </div>
+        </div>
+
+        <!--Tenth Question-->
+        <div class="my-5">  
+          <p class="lead font-weight-normal">10. Who was the president of the United States during World War I?</p>
+          <!--Option 1-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q10" value="A" checked>
+            <label class="form-check-label">Franklin Roosevelt</label>
+          </div>
+          <!--Option 2-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q10" value="B">
+            <label class="form-check-label">Woodrow Wilson</label>
+          </div>
+          <!--Option 3-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q10" value="C">
+            <label class="form-check-label">Lyndon Johnson</label>
+          </div>
+          <!--Option 4-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q10" value="D">
+            <label class="form-check-label">William Taft</label>
+          </div>
+        </div>
+
+        <!--Last Question-->
+        <div class="my-5">  
+          <p class="lead font-weight-normal">11. Which state borders Mexico?</p>
+          <!--Option 1-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q11" value="A" checked>
+            <label class="form-check-label">Louisiana</label>
+          </div>
+          <!--Option 2-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q11" value="B">
+            <label class="form-check-label">Colorado</label>
+          </div>
+          <!--Option 3-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q11" value="C">
+            <label class="form-check-label">Nevada</label>
+          </div>
+          <!--Option 4-->
+          <div class="form-check.my-2.text-white-50">
+            <input type="radio" name="q11" value="D">
+            <label class="form-check-label">Arizona</label>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <input type="submit" class="btn btn-light">
+        </div>
+      </form>
+
+
+
+    </div>
+
+  </div>
+
+
+
+
         </div>
       </div>
     </div>
@@ -62,7 +359,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="quiz.js"></script>
+  <script src="assets/javascript/quiz.js"></script>
 </body>
 
 </html>
