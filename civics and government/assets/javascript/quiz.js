@@ -2,6 +2,23 @@ const correctAnswers = ['C', 'A', 'C', 'C', 'D', 'C', 'C', 'D', 'B', 'B'];
 const form = document.querySelector('.quiz-form');
 const result = document.querySelector('.result');
 
+    //start timer and quiz
+    form.addEventListener('button', e => {
+        e.preventDefault();
+        var timeLeft = 300;
+    
+        var startTimer = document.getElementById("start").addEventListener("click", () => setInterval(function () {
+            console.log(timeLeft);
+            document.getElementById("timer").innerHTML = timeLeft;
+            timeLeft--;
+            if (timeLeft === 0 || timeLeft < 0) {
+                document.getElementById("timer").innerHTML = "Time's Up!"
+            }
+        }, 1000));
+    })
+
+
+
 form.addEventListener('submit', e => {
     e.preventDefault();
 
@@ -28,7 +45,7 @@ form.addEventListener('submit', e => {
         } else {
             output ++;
         }
-    }, 10);
+    }, 30);
 
 
 
